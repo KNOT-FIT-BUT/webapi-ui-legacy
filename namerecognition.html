@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Name Recognizer</title>
+		<meta name="description" content="">
+		<meta name="author" content="casey">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" type="text/css" href="css/semantic.css">
+		<link rel="stylesheet" type="text/css" href="css/namerecognition.css">
+	</head>
+
+<body id="feed">
+	<div id="fixedHeader" class="ui fixed inverted black main menu">
+	    <div id="headerMenu" class="container">
+	      <div class="title item">
+	        <b>Name Recognition</b>
+	      </div>
+	      <div class="right menu">
+	        <div class="ui button item black" id="findBtn">
+			  Find Names
+			</div>
+			<a class="ui item icon" id="showHelp">
+				<i class="help icon"></i>
+			</a>
+
+	      </div>
+	    </div>
+	  </div>
+	  <div id="panelWrapper" class="ui dimmable">
+  		<pre id="editor" contentEditable class="dimmable"></pre>
+  		 <div class="ui simple dimmer">
+    		<div class="ui indeterminate text loader">Processing...</div>
+  		</div>
+  	 </div>
+  <div class="ui modal" id="helpModal">
+  	<p>This is web interface for Name Recognition. Simple enter the text and click "FIND NAMES". After short time, results will be colored in original text.</p>
+  	<ul>
+  		<li><strong class="type0">Green</strong> -	name with full match with names in names.txt and surrnames.txt</li>
+  		<li><strong class="type1">Red</strong> - name with at least one part was added by script. This name can be invalid</li>
+  		<li><strong class="type2">Blue</strong>	- name missed by figa tool </li>
+  		<li><strong class="type3">Purple</strong> - coreference of name types listed above	</li>
+  		<li><strong class="type7">Lime</strong>	- name with surname part listed in surrnames.txt </li>
+  		<li><strong class="type8">Olive</strong> - name which is substring of longer name	</li>
+  	</ul>
+  	
+  </div>
+  <script src="javascript/3rdparty/jquery-2.1.0.min.js" type="text/javascript"></script>
+  <script src="javascript/3rdparty/semantic.min.js" type="text/javascript"></script>
+  <script src="javascript/3rdparty/mediator.min.js" type="text/javascript"></script>
+  <script src="javascript/3rdparty/changeCSS.js" type="text/javascript"></script>
+  <script src="javascript/namerecognition.js" type="text/javascript"></script>
+  
+</body>
+</html>

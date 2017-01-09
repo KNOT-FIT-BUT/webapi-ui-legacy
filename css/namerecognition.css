@@ -1,0 +1,67 @@
+
+html {
+	height: 100%;
+	
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	min-height: 100%;
+	font-size: 15px;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+	/*overflow-y: hidden;*/
+	
+}
+
+#headerMenu  {
+  margin: 0px auto;
+  max-height: 40px;
+  height: 40px;
+  width:60%;
+}
+
+
+#fixedHeader{
+  max-height: 40px;
+  height: 40px;
+  min-width: 320px;
+}
+
+#panelWrapper {
+	height: 100%;
+	/*overflow-y: none;*/
+	padding-top:40px;
+}
+
+#editor {
+	padding:  0px 10px 0px 10px;
+	margin: 0px;
+	height:100%;
+	max-height:100%;
+	display:block;
+	background-color: #eeeeee;
+	overflow-y: scroll;
+	
+}
+
+
+.type0{
+	color: green;
+}
+.type1{
+	color: red; 
+}
+.type2{
+	color: blue;
+}
+.type3{
+	color: purple;
+}
+.type7{
+	color: lime;
+}
+.type8{
+	color: olive;
+}
